@@ -90,7 +90,7 @@ function createSlides({ verseOrder, lyrics }: Song) {
     const sequence: string[] = verseOrder.split(" ").filter((a) => a)
     const sequences: any = {}
 
-    // split into multiple sub slides (https://github.com/ChurchApps/FreeShow/issues/1743)
+    // split into multiple sub slides (https://github.com/ChurchApps/PresenterBuddy/issues/1743)
     const slidesList: ((typeof lyrics)[number] & { isChild: boolean })[] = []
     lyrics.forEach((lyricSlide) => {
         const currentSlides = lyricSlide.lines.join("__BREAK__").split(/<p\s*style=["']page-break-after:\s*always;["']\s*\/?>/i)
@@ -218,10 +218,10 @@ function XMLtoObject(xml: string) {
         (Array.isArray(properties.comments)
             ? properties.comments?.map((comment) => comment["#text"] || "").join("\n")
             : typeof properties.comments?.comment === "string"
-              ? properties.comments.comment
-              : typeof properties.comments === "string"
-                ? properties.comments
-                : "") ||
+                ? properties.comments.comment
+                : typeof properties.comments === "string"
+                    ? properties.comments
+                    : "") ||
         ""
 
     const newSong: Song = {

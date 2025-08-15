@@ -34,11 +34,11 @@ function trackAppLaunch() {
 }
 
 function trackPageView(title: string) {
-    trackEvent("page_view", { page_location: "https://freeshow.app/_app/" + title, page_title: title, engagement_time_msec: 1 })
+    trackEvent("page_view", { page_location: "https://presenterbuddy.app/_app/" + title, page_title: title, engagement_time_msec: 1 })
 }
 
 function trackDrawerView(title: string) {
-    trackEvent("drawer_view", { drawer_location: "https://freeshow.app/_app/" + title, drawer_title: title, engagement_time_msec: 1 })
+    trackEvent("drawer_view", { drawer_location: "https://presenterbuddy.app/_app/" + title, drawer_title: title, engagement_time_msec: 1 })
 }
 
 const previouslyTracked: { [key: string]: string } = {}

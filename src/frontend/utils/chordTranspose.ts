@@ -1,4 +1,4 @@
-// https://github.com/ChurchApps/FreeShow/pull/1551
+// https://github.com/ChurchApps/PresenterBuddy/pull/1551
 
 // Standard chromatic scale with sharps
 const SHARP_SCALE = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]

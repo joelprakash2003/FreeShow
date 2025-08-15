@@ -58,11 +58,11 @@
         "libraries": "Libraries used",
         "thanks": "Thanks to",
         "new_update": "New update available",
-        "download": "Restart the application to update, or go to freeshow.app to download manually",
+        "download": "Restart the application to update, or go to presenterbuddy.app to download manually",
         "changes": "What's new"
     },
     "tooltip": {
-        "project": "Create a new project where you can add and arrange shows.",
+        "project": "Create a new project where you can add and arrange songs.",
         "show": "Create a new show where you can add song lyrics, presentations and media.",
         "groups": "All the groups in the current show and all the global groups. Click or drag them to add them to the current layout.",
         "layout": "Add transitions and next timers to slides in current layout.",
@@ -75,7 +75,8 @@
         "slide": "Edit current slide.",
         "filters": "Change the look of the selected element.",
         "options": "More options.",
-        "scripture": "Hold Ctrl/Cmd or Shift to select multiple verses."
+        "scripture": "Hold Ctrl/Cmd or Shift to select multiple verses.",
+        "join_set": "Join an existing live set by entering its ID."
     },
     "tips": {
         "trigger": "Triggers are commonly used to send a HTTP request to change the preset of cameras.",
@@ -206,7 +207,7 @@
         "online": "Online",
         "recommended": "Recommended",
         "bundle_media_files": "Bundle all media files",
-        "bundle_media_files_tip": "Copy the media files from all shows into one folder"
+        "bundle_media_files_tip": "Copy the media files from all songs into one folder"
     },
     "audio": {
         "settings": "Audio settings",
@@ -250,7 +251,7 @@
         "general": "Nothing here",
         "project_select": "Select a project",
         "show": "No show selected",
-        "shows": "No shows",
+        "shows": "No songs",
         "slides": "No slides",
         "slide": "No slide selected",
         "items": "No items selected",
@@ -269,7 +270,7 @@
     "remote": {
         "projects": "Projects",
         "project": "Project",
-        "shows": "Shows",
+        "shows": "Songs",
         "show": "Show",
         "slide": "Slide",
         "lyrics": "Lyrics",
@@ -361,7 +362,7 @@
         "change_folder": "Choose another location"
     },
     "tabs": {
-        "shows": "Shows",
+        "shows": "Songs",
         "media": "Media",
         "overlays": "Overlays",
         "audio": "Audio",
@@ -413,7 +414,7 @@
         "outro": "Outro"
     },
     "popup": {
-        "show": "New show",
+        "show": "New Song",
         "select_show": "Select show",
         "select_template": "Select template",
         "select_style": "Select style",
@@ -436,7 +437,7 @@
         "metadata_display": "Metadata display",
         "delete_show": "Delete show",
         "delete_show_confirmation": "Are you sure you want to delete",
-        "delete_duplicated_shows": "Delete duplicated shows",
+        "delete_duplicated_shows": "Delete duplicated songs",
         "change_name": "Change name on",
         "choose_screen": "Choose screen",
         "choose_output": "Choose output type",
@@ -481,13 +482,14 @@
         "manage_tags": "Manage tags",
         "chums_sync_categories": "Select categories to sync",
         "effect_items": "Effect items",
-        "initialize": "Welcome to FreeShow",
+        "join_set": "Join Live Set",
+        "initialize": "Welcome to PresenterBuddy",
         "unsaved": "Are you sure you want to quit?",
         "cancel": "Cancel",
         "continue": "Continue",
         "reset_all": "Reset everything",
         "reset_all_confirm": "Are you sure you want to reset everything?",
-        "reset_all_action": "This will reset the whole program, but not delete the .show files in your \"Shows\"-folder.",
+        "reset_all_action": "This will reset the whole program, but not delete the .show files in your \"Songs\"-folder.",
         "quit": "Quit without saving",
         "save_quit": "Save & Quit"
     },
@@ -531,10 +533,10 @@
     },
     "new": {
         "create": "Create new",
-        "show": "New show",
+        "show": "New Song",
         "empty_show": "New empty show",
         "show_convert": "Convert to show",
-        "project": "New project",
+        "project": "New Set",
         "section": "New section",
         "style": "New style",
         "profile": "New profile",
@@ -557,6 +559,12 @@
         "event_action": "New scheduled action",
         "effect": "New effect"
     },
+    "join": {
+        "set": "Join Set",
+        "enter_live_set_id": "Enter Live Set ID",
+        "join": "Join",
+        "cancel": "Cancel"
+    },
     "show": {
         "name": "Name",
         "category": "Category",
@@ -570,7 +578,7 @@
         "text": "Text edit",
         "update": "Update show",
         "locked": "This show has been locked!",
-        "locked_info": "This show has been locked for editing. Unlock it again in the shows drawer.",
+        "locked_info": "This show has been locked for editing. Unlock it again in the songs drawer.",
         "slide_template": "Slide template",
         "source": "Source",
         "artist": "Artist",
@@ -709,8 +717,8 @@
         "send_midi": "Send MIDI signal",
         "archive": "Archive",
         "show_archived": "Show archived",
-        "delete_shows_not_indexed": "Delete shows in 'Shows' folder that are not indexed",
-        "delete_empty_shows": "Delete empty shows",
+        "delete_shows_not_indexed": "Delete songs in 'Songs' folder that are not indexed",
+        "delete_empty_shows": "Delete empty songs",
         "delete_thumbnail_cache": "Delete thumbnail cache",
         "export_usage_log": "Export usage log",
         "reset_usage_log": "Reset usage log",
@@ -719,7 +727,7 @@
         "open_cache_folder": "Open cache folder",
         "open_app_data_folder": "Open app data folder",
         "open_user_data_folder": "Open user data folder",
-        "refresh_all_shows": "Get all shows in 'Shows' folder",
+        "refresh_all_shows": "Get all songs in 'Songs' folder",
         "start_timer": "Start timer",
         "pause_timers": "Pause active timers",
         "stop_timers": "Stop active timers",
@@ -851,9 +859,9 @@
         "exporting": "Exporting...",
         "exported": "Exported!",
         "oneFile": "One file",
-        "selected_shows": "Selected shows",
+        "selected_shows": "Selected songs",
         "current_project": "Current project",
-        "all_shows": "All shows",
+        "all_shows": "All songs",
         "all_projects": "All projects",
         "project": "Project",
         "option_type": "What would you like to export?",
@@ -1581,9 +1589,9 @@
         "project_list": "After opening a project you get a list of all the items here on the left side, drag & drop from the drawer to add more.",
         "drawer": "Find all of your shows, media, overlays, etc. in one place.",
         "drawer_search": "Search for content in the active drawer tab (songs, etc.). Use the shortcut CTRL/CMD+F for quicker access.",
-        "drawer_shows": "Manage all of your different shows by organizing them in different categories. Drag & drop any selected show to move them.",
-        "create_show_button": "Click this to create a new show (song, presentation, etc.)",
-        "create_show_popup": "Fill in the main details of the show, you can also auto find lyrics on the web from the name, or paste the lyrics manually.",
+        "drawer_shows": "Manage all of your different songs by organizing them in different categories. Drag & drop any selected song to move them.",
+        "create_show_button": "Click this to create a new song (song, presentation, etc.)",
+        "create_show_popup": "Fill in the main details of the song, you can also auto find lyrics on the web from the name, or paste the lyrics manually.",
         "show": "A show is the main presentation, click on any slide to present, and use the arrow keys to navigate. You can also drag & drop media files on a slide to set as background.",
         "media": "You can add media content with drag and drop, from the drawer or from your computer, into a show or a project.",
         "show_slide": "After a slide is clicked, it will show in the output and you will see a preview on the right, here you'll also find some extra actions like pausing a video.",

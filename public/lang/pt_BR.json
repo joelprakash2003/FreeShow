@@ -58,7 +58,7 @@
         "libraries": "Bibliotecas utilizadas",
         "thanks": "Agradecimentos",
         "new_update": "Nova atualização disponível",
-        "download": "Reinicie o app para atualizar ou vá em freeshow.app para baixar manualmente",
+        "download": "Reinicie o app para atualizar ou vá em presenterbuddy.app para baixar manualmente",
         "changes": "Novidades"
     },
     "tooltip": {
@@ -481,7 +481,7 @@
         "manage_tags": "Gerenciar tags",
         "chums_sync_categories": "Selecione categorias para sincronizar",
         "effect_items": "Efeitos",
-        "initialize": "Seja bem-vindo ao FreeShow",
+        "initialize": "Seja bem-vindo ao PresenterBuddy",
         "unsaved": "Tem certeza que deseja sair?",
         "cancel": "Cancelar",
         "continue": "Continuar",

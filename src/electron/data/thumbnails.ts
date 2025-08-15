@@ -73,7 +73,7 @@ let thumbnailFolderPath = ""
 export function getThumbnailFolderPath() {
     if (thumbnailFolderPath) return thumbnailFolderPath
 
-    const folderPath: string = path.join(app.getPath("temp"), "freeshow-cache")
+    const folderPath: string = path.join(app.getPath("temp"), "presenterbuddy-cache")
     if (!doesPathExist(folderPath)) makeDir(folderPath)
     thumbnailFolderPath = folderPath
 

@@ -196,7 +196,7 @@
     }
     $: if (id === "slide_tracker" && item) {
         if (item.tracker?.type) setBoxInputValue(box, "default", "tracker.type", "value", item.tracker.type)
-        setBoxInputValue(box, "default", "tracker.accent", "value", item.tracker?.accent || $themes[$theme]?.colors?.secondary || "#F0008C")
+        setBoxInputValue(box, "default", "tracker.accent", "value", item.tracker?.accent || $themes[$theme]?.colors?.secondary || "#0074d9")
 
         setBoxInputValue(box, "default", "tracker.childProgress", "hidden", item.tracker?.type !== "group")
         setBoxInputValue(box, "default", "tracker.oneLetter", "hidden", item.tracker?.type !== "group")

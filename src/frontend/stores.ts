@@ -1,4 +1,4 @@
-// ----- FreeShow -----
+// ----- PresenterBuddy -----
 // Here are all the global app variables
 
 import type { ICommonTagsResult } from "music-metadata"

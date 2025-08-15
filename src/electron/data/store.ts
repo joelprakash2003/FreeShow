@@ -1,4 +1,4 @@
-// ----- FreeShow -----
+// ----- PresenterBuddy -----
 // Get all user configs
 // https://www.npmjs.com/package/electron-store
 
@@ -231,5 +231,5 @@ function createStoreAtNewLocation(id: string, load = false) {
 
     // rewrite data to new location
     stores[key].clear()
-    ;(stores[key] as any).set(tempData)
+        ; (stores[key] as any).set(tempData)
 }

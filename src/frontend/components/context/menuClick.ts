@@ -162,7 +162,7 @@ const clickActions = {
     paste: (obj: ObjData) => paste(null, {}, obj.contextElem),
     // view
     // help
-    docs: () => sendMain(Main.URL, "https://freeshow.app/docs"),
+    docs: () => sendMain(Main.URL, "https://presenterbuddy.app/docs"),
     shortcuts: () => activePopup.set("shortcuts"),
     about: () => activePopup.set("about"),
     quick_search: () => quickSearchActive.set(true),
@@ -780,7 +780,7 @@ const clickActions = {
         if (obj.contextElem?.classList.value.includes("#projectsTab")) {
             const extensions = ["project", "shows", "json", "zip"]
             const name = translate("formats.project")
-            sendMain(Main.IMPORT, { channel: "freeshow_project", format: { extensions, name }, settings: { path: get(dataPath) } })
+            sendMain(Main.IMPORT, { channel: "presenterbuddy_project", format: { extensions, name }, settings: { path: get(dataPath) } })
             return
         }
     },

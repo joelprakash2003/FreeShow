@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Help us improve the stability of FreeShow
+about: Help us improve the stability of PresenterBuddy
 title: ""
 labels: bug
 assignees: ''
@@ -18,7 +18,7 @@ If applicable, add screenshots to help explain your problem.
 
 **Version (Optional)**
  - OS: [Windows/MacOS/Linux]
- - FreeShow Version: [e.g. 1.0.0]
+ - PresenterBuddy Version: [e.g. 1.0.0]
 
 **Additional context**
 Add any other context about the problem here.

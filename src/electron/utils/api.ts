@@ -109,7 +109,7 @@ function startOSC(PORT: number) {
     // const osc = new OSC({ plugin: new OSC.WebsocketServerPlugin() }) // ws://ip:port
     const osc = (servers.OSC = new OSC({ plugin: new OSC.DatagramPlugin() })) // UDP
 
-    osc.on("/freeshow/*", async (msg: OSC.Message) => {
+    osc.on("/presenterbuddy/*", async (msg: OSC.Message) => {
         // const active = msg.args[1] || 0
         let args: any = {}
         try {
@@ -119,7 +119,7 @@ function startOSC(PORT: number) {
             console.error("OSC: Could not parse JSON!\n", err)
         }
 
-        const action = msg.address.replace("/freeshow", "")
+        const action = msg.address.replace("/presenterbuddy", "")
         const returnData = await receivedData({ action, ...args }, (a: string) => console.info(`OSC: ${a}`))
         if (!returnData) return
 
@@ -222,7 +222,7 @@ export function stopApiListener(specificId = "") {
 
     function stop(id: string) {
         console.info(`${id}: Stopping server.`)
-        
+
         try {
             if (servers[id]) {
                 servers[id].close()

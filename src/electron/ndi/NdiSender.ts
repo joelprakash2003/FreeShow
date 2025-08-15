@@ -35,7 +35,7 @@ export class NdiSender {
         if (this.ndiDisabled || this.NDI[id]) return
         const grandiose = require("grandiose")
 
-        this.NDI[id] = { name: `FreeShow NDI${title ? ` - ${title}` : ""}` }
+        this.NDI[id] = { name: `PresenterBuddy NDI${title ? ` - ${title}` : ""}` }
         console.info("NDI - creating sender: " + this.NDI[id].name)
 
         try {

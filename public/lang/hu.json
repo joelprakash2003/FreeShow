@@ -58,7 +58,7 @@
         "libraries": "Felhasznált könyvtárak",
         "thanks": "Köszönet",
         "new_update": "Új frissítés érhető el",
-        "download": "Indítsa újra az alkalmazást a frissítéshez, vagy látogasson el a freeshow.app weboldalra a manuális letöltéshez",
+        "download": "Indítsa újra az alkalmazást a frissítéshez, vagy látogasson el a presenterbuddy.app weboldalra a manuális letöltéshez",
         "changes": "Újdonságok"
     },
     "tooltip": {
@@ -481,7 +481,7 @@
         "manage_tags": "Címkék kezelése",
         "chums_sync_categories": "Szinkronizálandó kategóriák kijelölése",
         "effect_items": "Effektus elemek",
-        "initialize": "Üdvözöljük a FreeShow-ban",
+        "initialize": "Üdvözöljük a PresenterBuddy-ban",
         "unsaved": "Biztosan ki szeretne léptni?",
         "cancel": "Mégsem",
         "continue": "Folytatás",

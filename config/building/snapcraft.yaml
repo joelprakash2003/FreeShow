@@ -1,4 +1,4 @@
-name: freeshow
+name: presenterbuddy
 version: 1.4.0
 title: FreeShow
 summary: FreeShow
@@ -31,13 +31,13 @@ layout:
     /usr/share/alsa:
         bind: $SNAP/usr/share/alsa
 parts:
-    freeshow:
+    presenterbuddy:
         source: dist/linux-unpacked/
         plugin: dump
         stage-packages:
             - libasound2t64
 apps:
-    freeshow:
+    presenterbuddy:
         command: command.sh
         extensions: [gnome]
         plugs:

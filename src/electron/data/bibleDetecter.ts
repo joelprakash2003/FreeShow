@@ -1,8 +1,8 @@
-type FileTypes = "freeshow" | "zefania" | "osis" | "opensong" | "beblia" | "softprojector" | "wordproject" | "biblequote" | "ibible" | "sqlite" | "mdb"
+type FileTypes = "presenterbuddy" | "zefania" | "osis" | "opensong" | "beblia" | "softprojector" | "wordproject" | "biblequote" | "ibible" | "sqlite" | "mdb"
 
 export function detectFileType(content: string): FileTypes | null {
     // JSON
-    if (content.includes('"books":') && content.includes('"number":') && content.includes('"text":')) return "freeshow"
+    if (content.includes('"books":') && content.includes('"number":') && content.includes('"text":')) return "presenterbuddy"
 
     // XML
     if (content.includes("XMLBIBLE") && content.includes("BIBLEBOOK")) return "zefania"

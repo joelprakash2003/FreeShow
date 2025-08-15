@@ -44,7 +44,7 @@
         "libraries": "Librerie usate",
         "thanks": "Grazie a",
         "new_update": "Nuovo aggiornamento disponibile",
-        "download": "Riavvia l'applicazione per aggiornare o vai su freeshow.app per scaricarla manualmente",
+        "download": "Riavvia l'applicazione per aggiornare o vai su presenterbuddy.app per scaricarla manualmente",
         "changes": "Cosa c'è di nuovo"
     },
     "tooltip": {
@@ -408,7 +408,7 @@
         "manage_icons": "Gestisci icone",
         "manage_colors": "Gestisci i colori",
         "choose_camera": "Scegli camera",
-        "initialize": "Benvenuto su FreeShow",
+        "initialize": "Benvenuto su PresenterBuddy",
         "unsaved": "Sei sicuro di voler uscire?",
         "cancel": "Cancella",
         "continue": "Continua",

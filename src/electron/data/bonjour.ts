@@ -10,7 +10,7 @@ export function publishPort(name: string, port: number) {
 
     bonjour.publish({
         name,
-        type: "freeshow",
+        type: "presenterbuddy",
         protocol: "udp",
         port,
         txt: customData,

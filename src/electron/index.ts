@@ -1,4 +1,4 @@
-// ----- FreeShow -----
+// ----- PresenterBuddy -----
 // This is the electron entry point
 
 import type { Rectangle } from "electron"
@@ -42,7 +42,7 @@ config.set("loaded", true)
 if (!config.get("loaded")) console.error("Could not get stored data!")
 
 // info
-console.info("Starting FreeShow...")
+console.info("Starting PresenterBuddy...")
 if (!isProd) console.info("Building app! (This may take 20-90 seconds)")
 
 // set application menu

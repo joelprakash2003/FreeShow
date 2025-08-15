@@ -1,4 +1,4 @@
-// ----- FreeShow -----
+// ----- PresenterBuddy -----
 // Svelte app entry point
 
 import "svelte"

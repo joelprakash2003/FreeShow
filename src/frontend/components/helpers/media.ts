@@ -1,4 +1,4 @@
-// ----- FreeShow -----
+// ----- PresenterBuddy -----
 // This is for media/file functions
 
 import { get } from "svelte/store"
@@ -289,7 +289,7 @@ export async function loadThumbnail(input: string, size: number) {
     if (input.includes("http") || input.includes("data:")) return input
 
     // already encoded (this could cause an infinite loop)
-    if (input.includes("freeshow-cache")) return input
+    if (input.includes("presenterbuddy-cache")) return input
 
     const loadedPath = get(loadedMediaThumbnails)[getThumbnailId({ input, size })]
     if (loadedPath) return loadedPath
@@ -308,12 +308,12 @@ export function getThumbnailPath(input: string, size: number) {
     if (input.includes("http") || input.includes("data:")) return input
 
     // already encoded
-    if (input.includes("freeshow-cache")) return input
+    if (input.includes("presenterbuddy-cache")) return input
 
     const loadedPath = get(loadedMediaThumbnails)[getThumbnailId({ input, size })]
     if (loadedPath) return loadedPath
 
-    const encodedPath: string = joinPath([get(tempPath), "freeshow-cache", getThumbnailFileName(hashCode(input))])
+    const encodedPath: string = joinPath([get(tempPath), "presenterbuddy-cache", getThumbnailFileName(hashCode(input))])
     return encodedPath
 
     function getThumbnailFileName(path: string) {

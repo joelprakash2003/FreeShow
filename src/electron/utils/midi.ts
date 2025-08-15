@@ -6,8 +6,8 @@ import { ToMain } from "../../types/IPC/ToMain"
 
 // const virtualDevices: any = {}
 // export function createVirtualMidi() {
-//     virtualDevices.input = new easymidi.Input("FreeShow MIDI Input", true)
-//     virtualDevices.output = new easymidi.Output("FreeShow MIDI Output", true)
+//     virtualDevices.input = new easymidi.Input("PresenterBuddy MIDI Input", true)
+//     virtualDevices.output = new easymidi.Output("PresenterBuddy MIDI Output", true)
 //     console.log("Created MIDI devices")
 // }
 
@@ -73,7 +73,7 @@ let openedPorts: { [key: string]: any } = {}
 export async function receiveMidi(data: any) {
     // console.log("INPUT", data.input)
     if (!data.input || openedPorts[data.id]) return
-    // fix: https://github.com/ChurchApps/FreeShow/issues/1672
+    // fix: https://github.com/ChurchApps/PresenterBuddy/issues/1672
     if (data.input === "input") return
 
     try {

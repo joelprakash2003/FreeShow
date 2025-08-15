@@ -71,6 +71,7 @@ import SelectStageLayout from "../components/main/popups/SelectStageLayout.svelt
 import SelectStyle from "../components/main/popups/SelectStyle.svelte"
 import ManageDynamicValues from "../components/main/popups/ManageDynamicValues.svelte"
 import Confirm from "../components/main/popups/Confirm.svelte"
+import JoinSet from "../components/main/popups/JoinSet.svelte"
 
 export const popups: { [key in Popups]: ComponentType } = {
     initialize: Initialize,
@@ -141,7 +142,8 @@ export const popups: { [key in Popups]: ComponentType } = {
     cloud_update: CloudUpdate,
     cloud_method: CloudMethod,
     chums_sync_categories: ChumsSyncCategories,
-    effect_items: EffectItems
+    effect_items: EffectItems,
+    join_set: JoinSet
 }
 
 export function waitForPopupData(popupId: Popups): Promise<any> {

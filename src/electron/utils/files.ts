@@ -1,4 +1,4 @@
-// ----- FreeShow -----
+// ----- PresenterBuddy -----
 // Functions to interact with local files
 
 import { app, dialog, shell } from "electron"
@@ -183,7 +183,7 @@ export function openSystemFolder(folderPath: string) {
     shell.openPath(folderPath).catch((err) => console.error("Could not open system folder: " + String(err)))
 }
 
-const appFolderName = "FreeShow"
+const appFolderName = "PresenterBuddy"
 export function getDocumentsFolder(folderPath: string | null = null, folderName = dataFolderNames.shows, shouldCreateFolder = true): string {
     const documentsFolderPath = [app.getPath("documents"), appFolderName]
     if (folderName) documentsFolderPath.push(folderName)
@@ -851,7 +851,7 @@ export function getShowsFromIds(showIds: string[], showsPath: string) {
 
 // some users might have got themselves in a situation they can't get out of
 // example: enables "kiosk" mode on mac might have resulted in a black screen, and they can't find the app data location to revert it!
-// how: Place any file in your Documents/FreeShow folder that has the FIXES key in it's name (e.g. DISABLE_KIOSK_MODE), when you now start your app the fix will be triggered!
+// how: Place any file in your Documents/PresenterBuddy folder that has the FIXES key in it's name (e.g. DISABLE_KIOSK_MODE), when you now start your app the fix will be triggered!
 const FIXES = {
     DISABLE_KIOSK_MODE: () => {
         // wait to ensure output settings have loaded in the app!

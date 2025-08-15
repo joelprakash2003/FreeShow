@@ -1,4 +1,4 @@
-// ----- FreeShow -----
+// ----- PresenterBuddy -----
 // Export as TXT or PDF
 // When exporting as PDF we create a new window and capture its content
 

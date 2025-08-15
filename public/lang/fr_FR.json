@@ -21,7 +21,7 @@
         "libraries": "Bibliothèques utilisées",
         "thanks": "Merci à",
         "new_update": "Nouvelle version disponible",
-        "download": "Redémarrez l'application pour la mettre à jour, ou rendez-vous sur freeshow.app pour la télécharger manuellement",
+        "download": "Redémarrez l'application pour la mettre à jour, ou rendez-vous sur presenterbuddy.app pour la télécharger manuellement",
         "changes": "Quoi de neuf"
     },
     "tooltip": {
@@ -357,7 +357,7 @@
         "manage_icons": "Gérer les icônes",
         "manage_colors": "Gérer les couleurs",
         "choose_camera": "Choisir la caméra",
-        "initialize": "Bienvenue sur FreeShow",
+        "initialize": "Bienvenue sur PresenterBuddy",
         "unsaved": "Vous n'avez pas encore sauvergardé ! Êtes-vous sur de vouloir quitter ?",
         "cancel": "Annuler",
         "continue": "Continuer",

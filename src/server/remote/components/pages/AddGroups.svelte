@@ -1,61 +1,75 @@
 <script lang="ts">
-    import { createEventDispatcher } from "svelte"
-    import type { Show } from "../../../../types/Show"
-    import { send } from "../../util/socket"
-    import { groupsCache } from "../../util/stores"
+  import { createEventDispatcher } from "svelte"
+  import type { Show } from "../../../../types/Show"
+  import { send } from "../../util/socket"
+  import { groupsCache } from "../../util/stores"
 
-    export let show: Show
+  export let show: Show
 
-    send("API:get_groups", { id: show.id })
+  send("API:get_groups", { id: show.id })
 
-    $: groups = $groupsCache[show.id!] || []
+  $: groups = $groupsCache[show.id!] || []
 
-    let dispatch = createEventDispatcher()
-    function addGroup(group: any) {
-        send("API:add_group", { showId: show.id, groupId: group.id })
-        dispatch("added")
-    }
+  let dispatch = createEventDispatcher()
+  function addGroup(group: any) {
+    send("API:add_group", { showId: show.id, groupId: group.id })
+    dispatch("added")
+  }
 </script>
 
 <div class="groups">
-    {#each groups as group}
-        <div class="group" style="--color: {group.color};" on:click={() => addGroup(group)}>
-            <p>{group.group || "—"}</p>
-        </div>
-    {/each}
+  {#each groups as group}
+    <div
+      class="group"
+      style="--color: {group.color};"
+      on:click={() => addGroup(group)}
+    >
+      <p>{group.group || "—"}</p>
+    </div>
+  {/each}
 </div>
 
 <style>
-    .groups {
-        flex: 1;
-        overflow-y: auto;
+  .groups {
+    flex: 1;
+    overflow-y: auto;
 
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 
-        padding: 10px;
-        /* FreeShow UI scrollbar */
-        scrollbar-width: thin; /* Firefox */
-        scrollbar-color: rgb(255 255 255 / 0.3) rgb(255 255 255 / 0.05);
-    }
-    .groups::-webkit-scrollbar { width: 8px; height: 8px; }
-    .groups::-webkit-scrollbar-track,
-    .groups::-webkit-scrollbar-corner { background: rgb(255 255 255 / 0.05); }
-    .groups::-webkit-scrollbar-thumb { background: rgb(255 255 255 / 0.3); border-radius: 8px; }
-    .groups::-webkit-scrollbar-thumb:hover { background: rgb(255 255 255 / 0.5); }
+    padding: 10px;
+    /* PresenterBuddy UI scrollbar */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: rgb(255 255 255 / 0.3) rgb(255 255 255 / 0.05);
+  }
+  .groups::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  .groups::-webkit-scrollbar-track,
+  .groups::-webkit-scrollbar-corner {
+    background: rgb(255 255 255 / 0.05);
+  }
+  .groups::-webkit-scrollbar-thumb {
+    background: rgb(255 255 255 / 0.3);
+    border-radius: 8px;
+  }
+  .groups::-webkit-scrollbar-thumb:hover {
+    background: rgb(255 255 255 / 0.5);
+  }
 
-    .group {
-        display: flex;
-        justify-content: center;
-        width: 100%;
+  .group {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 
-        background-color: var(--primary-darker);
+    background-color: var(--primary-darker);
 
-        --color: var(--text);
-        border-bottom: 2px solid var(--color);
-        color: var(--color);
+    --color: var(--text);
+    border-bottom: 2px solid var(--color);
+    color: var(--color);
 
-        cursor: pointer;
-    }
+    cursor: pointer;
+  }
 </style>

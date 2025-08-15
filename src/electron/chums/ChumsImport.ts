@@ -6,7 +6,7 @@ import { ChumsConnect } from "./ChumsConnect"
 
 /**
  * Handles importing service plans and songs from Chums.
- * Converts Chums service plans and songs into FreeShow shows and projects.
+ * Converts Chums service plans and songs into PresenterBuddy shows and projects.
  */
 export class ChumsImport {
     private static projects: any[] = []

@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest a new feature/improvement for FreeShow
+about: Suggest a new feature/improvement for PresenterBuddy
 title: ""
 labels: enhancement
 assignees: ''

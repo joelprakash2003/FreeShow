@@ -44,7 +44,7 @@
         "libraries": "Verwendete Bibliotheken",
         "thanks": "Dank an",
         "new_update": "Neues Update verfügbar",
-        "download": "Starte das Programm für das Update neu oder gehe zu freeshow.app für einen manuellen Download",
+        "download": "Starte das Programm für das Update neu oder gehe zu presenterbuddy.app für einen manuellen Download",
         "changes": "Was ist neu"
     },
     "tooltip": {
@@ -408,7 +408,8 @@
         "manage_icons": "Icons verwalten",
         "manage_colors": "Farben verwalten",
         "choose_camera": "Kamera auswählen",
-        "initialize": "Willkommen bei FreeShow",
+        "join_set": "Live-Set beitreten",
+        "initialize": "Willkommen bei PresenterBuddy",
         "unsaved": "Programm beenden?",
         "cancel": "Abbrechen",
         "continue": "Weiter",
@@ -469,6 +470,12 @@
         "collection": "Neue Sammlung",
         "action": "Neue Aktion",
         "event": "Neue Veranstaltung"
+    },
+    "join": {
+        "set": "Set beitreten",
+        "enter_live_set_id": "Live-Set-ID eingeben",
+        "join": "Beitreten",
+        "cancel": "Abbrechen"
     },
     "show": {
         "name": "Name",

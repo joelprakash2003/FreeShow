@@ -58,7 +58,7 @@
         "libraries": "Bibliotecas utilizadas",
         "thanks": "Gracias por",
         "new_update": "Nueva actualización disponible",
-        "download": "Reinicia la aplicación para actualizar, o vaya a freeshow.app para descargarla manualmente",
+        "download": "Reinicia la aplicación para actualizar, o vaya a presenterbuddy.app para descargarla manualmente",
         "changes": "Novedades"
     },
     "tooltip": {
@@ -250,7 +250,7 @@
         "general": "Seleccionar un proyecto",
         "project_select": "Ningún programa seleccionado",
         "show": "Ningún programa",
-        "shows": "Ninguna diapositiva",
+        "shows": "Ninguna canción",
         "slides": "Ninguna diapositiva seleccionada",
         "slide": "Ningún tema seleccionado",
         "items": "No se encontró",
@@ -269,7 +269,7 @@
     "remote": {
         "projects": "Proyectos",
         "project": "Proyecto",
-        "shows": "Programas",
+        "shows": "Canciones",
         "show": "Programa",
         "slide": "Diapositiva",
         "lyrics": "Letras",
@@ -361,7 +361,7 @@
         "change_folder": "Elegir otra ubicación"
     },
     "tabs": {
-        "shows": "Programas",
+        "shows": "Canciones",
         "media": "Medios",
         "overlays": "Capas",
         "audio": "Audio",
@@ -413,7 +413,7 @@
         "outro": "Cierre"
     },
     "popup": {
-        "show": "Nuevo programa",
+        "show": "Nueva Canción",
         "select_show": "Seleccionar programa",
         "select_template": "Seleccionar plantilla",
         "select_style": "Seleccionar estilo",
@@ -481,7 +481,7 @@
         "manage_tags": "Gestionar etiquetas",
         "chums_sync_categories": "Elige las categorías a sincronizar",
         "effect_items": "Elementos de efecto",
-        "initialize": "Bienvenido a FreeShow",
+        "initialize": "Bienvenido a PresenterBuddy",
         "unsaved": "¿Estás seguro de que quieres salir?",
         "cancel": "Cancelar",
         "continue": "Continuar",
@@ -531,10 +531,10 @@
     },
     "new": {
         "create": "Crear nuevo",
-        "show": "Nuevo programa",
+        "show": "Nueva Canción",
         "empty_show": "Nuevo programa vacío",
         "show_convert": "Convertir a programa",
-        "project": "Nuevo proyecto",
+        "project": "Nuevo Set",
         "section": "Nueva sección",
         "style": "Nuevo estilo",
         "timer": "Nuevo temporizador",

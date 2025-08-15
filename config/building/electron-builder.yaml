@@ -1,4 +1,4 @@
-appId: app.freeshow
+appId: app.presenterbuddy
 productName: FreeShow
 artifactName: FreeShow-${version}-${arch}.${ext}
 

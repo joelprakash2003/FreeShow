@@ -58,7 +58,7 @@
         "libraries": "Libraries used",
         "thanks": "Thanks to",
         "new_update": "New update available",
-        "download": "Restart the application to update, or go to freeshow.app to download manually",
+        "download": "Restart the application to update, or go to presenterbuddy.app to download manually",
         "changes": "What's new"
     },
     "tooltip": {
@@ -481,7 +481,7 @@
         "manage_tags": "Manage tags",
         "chums_sync_categories": "Select categories to sync",
         "effect_items": "Effect items",
-        "initialize": "Welcome to FreeShow",
+        "initialize": "Welcome to PresenterBuddy",
         "unsaved": "Are you sure you want to quit?",
         "cancel": "Cancel",
         "continue": "Continue",

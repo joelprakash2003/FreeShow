@@ -555,7 +555,7 @@ export const _updaters = {
 
                 // create output if no normal outputs (in case stage outputs are still active)
                 outputs.update((a) => {
-                    a.default = { enabled: true, active: true, name: get(dictionary).theme?.primary || "Primary", color: "#F0008C", bounds: { x: 0, y: 0, width: 1920, height: 1080 }, screen: null, style: "default", show: {} }
+                    a.default = { enabled: true, active: true, name: get(dictionary).theme?.primary || "Primary", color: "#0074d9", bounds: { x: 0, y: 0, width: 1920, height: 1080 }, screen: null, style: "default", show: {} }
                     return a
                 })
             }, 100)

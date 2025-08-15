@@ -427,7 +427,7 @@ function decodeBase64(text: string) {
     })
 
     // WIP better RTF decoding
-    // https://github.com/ChurchApps/FreeShow/issues/1200
+    // https://github.com/ChurchApps/PresenterBuddy/issues/1200
 
     // https://www.oreilly.com/library/view/rtf-pocket-guide/9781449302047/ch04.html
     r = r.replaceAll("\\u8217 ?", "'")

@@ -56,7 +56,7 @@
         "libraries": "Kullanılan kütüphaneler",
         "thanks": "Teşekkür ederim",
         "new_update": "Yeni güncelleme mevcut",
-        "download": "Güncellemek için uygulamayı yeniden başlatın veya manuel olarak indirmek için freeshow.app adresine gidin",
+        "download": "Güncellemek için uygulamayı yeniden başlatın veya manuel olarak indirmek için presenterbuddy.app adresine gidin",
         "changes": "Neler yeni"
     },
     "tooltip": {
@@ -474,7 +474,7 @@
         "manage_tags": "Etiketleri yönet",
         "chums_sync_categories": "Senkronize edilecek kategorileri seçin",
         "effect_items": "Efekt öğeleri",
-        "initialize": "FreeShow'a Hoşgeldiniz",
+        "initialize": "PresenterBuddy'a Hoşgeldiniz",
         "unsaved": "Bırakmak istediğine emin misin?",
         "cancel": "İptal",
         "continue": "Devam et",

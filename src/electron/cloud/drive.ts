@@ -549,4 +549,4 @@ function combineFiles(cloudContent: any, localContent: any, newest: string) {
 }
 
 // a custom drive media folder is not planned as discussed here:
-// https://github.com/ChurchApps/FreeShow/issues/402
+// https://github.com/ChurchApps/PresenterBuddy/issues/402

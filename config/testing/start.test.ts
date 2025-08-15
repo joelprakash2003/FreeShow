@@ -6,7 +6,7 @@ const timeoutMs = 2_000;
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
 
 test.beforeEach(async ({ context }) => {
-    await context.route("https://api.github.com/repos/ChurchApps/freeshow/releases", (route) => route.abort())
+    await context.route("https://api.github.com/repos/ChurchApps/presenterbuddy/releases", (route) => route.abort())
 })
 
 test("Launch electron app", async () => {
@@ -26,7 +26,7 @@ test("Launch electron app", async () => {
 
     await electronApp.waitForEvent("window")
 
-    // Seems like we need some delay for FreeShow to start up correctly,
+    // Seems like we need some delay for PresenterBuddy to start up correctly,
     // before doing anything
     // TODO: would be great if we can identify the loading window and main window
     await delay(5_000)
@@ -100,7 +100,7 @@ test("Launch electron app", async () => {
         await expect(window.locator("#group").getByTitle("Verse")).toBeVisible({ timeout: timeoutMs })
 
         // Manual save!
-        await window.locator(".top").getByText("FreeShow").click({ button: "right", timeout: timeoutMs })
+        await window.locator(".top").getByText("PresenterBuddy").click({ button: "right", timeout: timeoutMs })
         await window.getByText("Save", { exact: true }).click({ timeout: timeoutMs })
         // await window.keyboard.press("Control+S")
         // await window.keyboard.press("Meta+S")

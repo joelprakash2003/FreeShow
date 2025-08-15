@@ -369,7 +369,7 @@ export function findMatchingOut(id: string, updater: Outputs = get(outputs)): st
         }
     })
 
-    // if (match && match === "#F0008C" && get(themes)[get(theme)]?.colors?.secondary) {
+    // if (match && match === "#0074d9" && get(themes)[get(theme)]?.colors?.secondary) {
     //   match = get(themes)[get(theme)]?.colors?.secondary
     // }
 
@@ -605,7 +605,7 @@ export const defaultOutput: Output = {
     enabled: true,
     active: true,
     name: "Output",
-    color: "#F0008C",
+    color: "#0074d9",
     bounds: { x: 0, y: 0, width: 1920, height: 1080 }, // x: 1920 ?
     screen: null
 }

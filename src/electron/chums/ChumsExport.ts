@@ -7,7 +7,7 @@ import { ChumsConnect } from "./ChumsConnect"
 import type { ChumsSongData } from "./types"
 
 /**
- * Handles exporting FreeShow songs to Chums.
+ * Handles exporting PresenterBuddy songs to Chums.
  * Syncs local songs with Chums by identifying missing songs and sending them in batches.
  */
 export class ChumsExport {
@@ -37,7 +37,7 @@ export class ChumsExport {
     }
 
     private static async getMissingSongIds(data: MainSendPayloads[Main.CHUMS_STARTUP_LOAD]): Promise<string[]> {
-        const freeShowIds = this.getAllFreeShowSongIds(data)
+        const freeShowIds = this.getAllPresenterBuddySongIds(data)
 
         const missingSongsResponse = await ChumsConnect.apiRequest({
             api: "content",
@@ -51,7 +51,7 @@ export class ChumsExport {
         return missingSongsResponse || []
     }
 
-    private static getAllFreeShowSongIds(data: MainSendPayloads[Main.CHUMS_STARTUP_LOAD]): string[] {
+    private static getAllPresenterBuddySongIds(data: MainSendPayloads[Main.CHUMS_STARTUP_LOAD]): string[] {
         const shows = data.shows
         const selectedCategories = data.categories || ["song"]
         return Object.keys(shows).filter((key) => selectedCategories.includes(shows[key].category || ""))

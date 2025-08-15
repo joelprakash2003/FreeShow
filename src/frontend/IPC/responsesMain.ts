@@ -450,11 +450,11 @@ export const mainResponses: MainResponses = {
         const data = mainData as { content: string; name?: string; extension?: string }[]
 
         const receiveIMPORT = {
-            // FreeShow
-            freeshow: () => importShow(data),
-            freeshow_project: () => importProject(data),
-            freeshow_template: () => importTemplate(data),
-            freeshow_theme: () => importSpecific(data, themes),
+            // PresenterBuddy
+            presenterbuddy: () => importShow(data),
+            presenterbuddy_project: () => importProject(data),
+            presenterbuddy_template: () => importTemplate(data),
+            presenterbuddy_theme: () => importSpecific(data, themes),
             // Text
             txt: () => convertTexts(data),
             chordpro: () => convertChordPro(data),

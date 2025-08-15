@@ -39,7 +39,10 @@
 </script>
 
 <Center class="context #splash">
-    <h1>FreeShow</h1>
+    <div class="logo-container">
+        <img src="./assets/Grey_Logo.png" alt="PresenterBuddy Logo" class="logo" draggable="false" />
+        <h1>PresenterBuddy</h1>
+    </div>
     <p style="opacity: 0.7;">v{$version}</p>
     {#if $special.splashText}
         <p style="padding-top: 30px">
@@ -56,7 +59,7 @@
     {:else if Object.keys($shows).length < 20}
         <!-- shows up for new users (can be found in "About" menu) -->
         <p style="padding-top: 30px">
-            <Link url="https://freeshow.app/docs">
+            <Link url="https://presenterbuddy.app/docs">
                 <T id="main.docs" />
                 <Icon id="launch" white />
             </Link>
@@ -84,9 +87,24 @@
 </Center>
 
 <style>
+    .logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        height: 120px;
+        width: auto;
+        object-fit: contain;
+    }
+
     h1 {
         font-size: 4em;
         overflow: initial;
+        margin: 0;
     }
 
     p {
@@ -103,15 +121,24 @@
         h1 {
             font-size: 3em;
         }
+        .logo {
+            height: 100px;
+        }
     }
     @media screen and (max-height: 400px) {
         h1 {
             font-size: 2em;
         }
+        .logo {
+            height: 80px;
+        }
     }
     @media screen and (max-width: 800px) {
         h1 {
             font-size: 2em;
+        }
+        .logo {
+            height: 100px;
         }
     }
 </style>

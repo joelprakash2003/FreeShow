@@ -107,11 +107,11 @@ export async function importShow(id: string, files: string[] | null, importSetti
     if (mdbFile) files = files.filter((a) => a.endsWith(".mdb"))
     if (mdbFile) importId = "mdb"
 
-    if (id === "freeshow_project") {
+    if (id === "presenterbuddy_project") {
         await importProject(files, importSettings.path)
         return
     }
-    if (id === "freeshow_template") {
+    if (id === "presenterbuddy_template") {
         await importTemplate(files, importSettings.path)
         return
     }
@@ -147,7 +147,7 @@ export async function importShow(id: string, files: string[] | null, importSetti
 
     if (importId in specialImports) data = await specialImports[importId as keyof typeof specialImports](files)
     else {
-        // TXT | FreeShow | ProPresenter | VidoePsalm | OpenLP | OpenSong | XML Bible | Lessons.church
+        // TXT | PresenterBuddy | ProPresenter | VidoePsalm | OpenLP | OpenSong | XML Bible | Lessons.church
         for (let i = 0; i < files.length; i += BATCH_SIZE) {
             const batch = files.slice(i, i + BATCH_SIZE)
             const batchData = await Promise.all(batch.map((file) => readFile(file)))
@@ -217,7 +217,7 @@ async function importProject(files: string[], dataPath: string) {
     // remove folder if no files stored
     // if (!readFolder(importFolder).length) deleteFolder(importFolder)
 
-    sendToMain(ToMain.IMPORT2, { channel: "freeshow_project", data })
+    sendToMain(ToMain.IMPORT2, { channel: "presenterbuddy_project", data })
 }
 
 // TEMPLATE
@@ -248,7 +248,7 @@ async function importTemplate(files: string[], dataPath: string) {
         if (dataFile) data.push(dataFile)
     })
 
-    sendToMain(ToMain.IMPORT2, { channel: "freeshow_template", data })
+    sendToMain(ToMain.IMPORT2, { channel: "presenterbuddy_template", data })
 }
 
 /// ZIP ///

@@ -8,7 +8,7 @@ import { convertOpenSongBible } from "./opensong"
 import { get } from "svelte/store"
 
 const bibleTypes = {
-    freeshow: { name: "FreeShow", func: importFSB },
+    presenterbuddy: { name: "PresenterBuddy", func: importFSB },
     zefania: { name: "Zefania", func: convertZefaniaBible },
     osis: { name: "OSIS", func: convertOSISBible },
     beblia: { name: "Beblia", func: convertBebliaBible },
@@ -26,7 +26,7 @@ export function importBibles(data: any[]) {
 
         data.forEach((file) => {
             let type = file.type
-            if (type === "fsb" || !type) type = "freeshow"
+            if (type === "fsb" || !type) type = "presenterbuddy"
 
             if (bibleTypes[type]) {
                 const name = bibleTypes[type].name

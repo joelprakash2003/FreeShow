@@ -347,6 +347,7 @@ export type Popups =
     | "cloud_method"
     | "chums_sync_categories"
     | "effect_items"
+    | "join_set"
 
 export type DefaultProjectNames = "date" | "today" | "sunday" | "week" | "custom" | "blank"
 

@@ -145,13 +145,13 @@ export function setExampleOverlays() {
         a.watermark = {
             isDefault: true,
             name: get(dictionary).example?.watermark || "Watermark",
-            color: "#F0008C",
+            color: "#0074d9",
             category: "notice",
             items: [
                 {
                     style: "top:870px;inset-inline-start:1248px;height:170px;width:630px;",
                     align: "align-items:flex-end;",
-                    lines: [{ align: "text-align: end;", text: [{ value: "FreeShow", style: "font-size:50px;font-weight:bold;color:#F0008C;" }] }]
+                    lines: [{ align: "text-align: end;", text: [{ value: "PresenterBuddy", style: "font-size:50px;font-weight:bold;color:#0074d9;" }] }]
                 }
             ]
         }

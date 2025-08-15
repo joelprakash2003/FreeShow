@@ -68,7 +68,7 @@ export async function startBackup({ showsPath, dataPath, customTriggers }: { sho
         }
 
         // ensure all shows are added correctly
-        // https://github.com/ChurchApps/FreeShow/issues/1492
+        // https://github.com/ChurchApps/PresenterBuddy/issues/1492
         await wait(Object.keys(shows).length * 0.4)
 
         const content: string = JSON.stringify(allShows)
@@ -80,7 +80,7 @@ export async function startBackup({ showsPath, dataPath, customTriggers }: { sho
 // RESTORE
 
 export function restoreFiles({ showsPath }: { showsPath: string }) {
-    const files = selectFilesDialog("", { name: "FreeShow Backup Files", extensions: ["json"] })
+    const files = selectFilesDialog("", { name: "PresenterBuddy Backup Files", extensions: ["json"] })
     if (!files?.length) return sendToMain(ToMain.RESTORE2, { finished: false })
     sendToMain(ToMain.RESTORE2, { starting: true })
 
